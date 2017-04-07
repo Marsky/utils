@@ -120,6 +120,13 @@ class Image
 	/** @var resource */
 	private $image;
 
+	/**
+	 * Releases image from memory
+	 */
+	public function destroyImage() {
+       imagedestroy($this->image);
+   	}
+
 
 	/**
 	 * Returns RGB color (0..255) and transparency (0..127).
