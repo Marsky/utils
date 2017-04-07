@@ -124,8 +124,8 @@ class Image
 	 * Releases image from memory
 	 */
 	public function destroyImage() {
-       imagedestroy($this->image);
-   	}
+		imagedestroy($this->image);
+	}
 
 
 	/**
